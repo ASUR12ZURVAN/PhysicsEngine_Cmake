@@ -63,7 +63,6 @@ const float RigidBody3D::GetMass() const {
 const Vec3& RigidBody3D::GetPosition() const {
     return position;
 }
-
 void RigidBody3D::SetPosition(const Vec3& pos) {
     position = pos;
 }
