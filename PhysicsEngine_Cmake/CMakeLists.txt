@@ -5,7 +5,7 @@ add_executable(PhysicsEngine_Cmake
 
     Custom_Implementation/Vec3.cpp
     Custom_Headers/Vec3.h  
- "Custom_Headers/Physics3D.h" "Custom_Implementation/Physics3D.cpp" "Custom_Headers/PhysicsWorld.h" "Custom_Implementation/PhysicsWorld.cpp")
+ "Custom_Headers/Physics3D.h" "Custom_Implementation/Physics3D.cpp" "Custom_Headers/PhysicsWorld.h" "Custom_Implementation/PhysicsWorld.cpp" "Custom_Headers/ModelInput.h")
 
 # Use C++20
 set_property(TARGET PhysicsEngine_Cmake PROPERTY CXX_STANDARD 20)

@@ -4,8 +4,8 @@
 #include "Vec3.h"
 #include "Physics3D.h"
 
-constexpr int BALL_COUNT = 5;
-constexpr float BALL_RADIUS = 1.0f;
+constexpr int BALL_COUNT = 50;
+constexpr float BALL_RADIUS = 0.5f;
 constexpr float RESTITUTION = 0.8f;
 
 //RESTITUTION would decide how the balls would bounce off
@@ -69,6 +69,8 @@ int main()
     camera.projection = CAMERA_PERSPECTIVE;
 
     std::vector<RigidBody3D> balls(BALL_COUNT);
+
+
 
     // Initialize balls with positions and velocities
     for (int i = 0; i < BALL_COUNT; ++i) {
@@ -161,7 +163,7 @@ int main()
         DrawText("Arrow Keys : Move Camera", 20, 20, 20, BLACK);
         DrawFPS(20, 50);
         EndDrawing();
-    }
+    } 
 
     CloseWindow();
     return 0;
