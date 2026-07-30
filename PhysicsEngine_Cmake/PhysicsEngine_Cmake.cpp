@@ -4,6 +4,10 @@
 #include "Vec3.h"
 #include "Physics3D.h"
 
+
+extern void runCudaTest();
+extern void runCudaSim();
+
 constexpr int BALL_COUNT = 50;
 constexpr float BALL_RADIUS = 0.5f;
 constexpr float RESTITUTION = 0.8f;
@@ -56,6 +60,10 @@ void ResolveCollision(RigidBody3D& a, RigidBody3D& b, float radius) {
 
 int main()
 {
+    // Run GPU simulation demo when available
+    runCudaSim();
+    runCudaTest();
+    runCudaTest();
     const int screenWidth = 1280;
     const int screenHeight = 720;
 
