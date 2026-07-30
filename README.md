@@ -273,12 +273,6 @@ Current simulation:
 
 ---
 
-## License
-
-This project is released under the MIT License.
-
----
-
 ## Author
 
 **Sumit Kumar Sahu**
