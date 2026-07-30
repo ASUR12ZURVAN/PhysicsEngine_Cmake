@@ -11,7 +11,7 @@ void runCudaSim()
 	printf("[runCudaSim] cuda devices=%d\n", devCount);
 	if (devCount <= 0) return;
 
-	const size_t N = 200; // number of balls
+	const size_t N = 2000; // number of balls
 	GpuSimulation* sim = gpuSimCreate(N);
 	std::vector<cuda_impl::Vec3Cuda> pos(N);
 	std::vector<cuda_impl::Vec3Cuda> vel(N);
