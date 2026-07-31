@@ -3,6 +3,9 @@
 #include <cmath>
 #include "Vec3.h"
 #include "Physics3D.h"
+#include<cuda_runtime.h>
+#include "Custom_Implementation/cuda/Physics3D_cuda.cuh"
+#include "Custom_Implementation/cuda/Vec3_cuda.cuh"
 
 
 extern void runCudaTest();
